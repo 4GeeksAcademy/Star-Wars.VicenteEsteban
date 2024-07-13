@@ -1,0 +1,13 @@
+body {
+  background-image: url("https://i.gifer.com/NgsT.gif");
+
+  background-size: 120% auto;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+
+ 
+}
+
+.active {
+  color: yellow;
+}
