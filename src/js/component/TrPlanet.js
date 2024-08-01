@@ -27,11 +27,11 @@ export const TrPlanet = ({ title, text, children }) => {
           />
         </div>
 
-        <div className="container carousel-item">
+        <div className="container carousel-item ">
           <h1 className="ms-2 text-warning">{dataPlanet.name}</h1>
 
-          <ul className="col float-end bullets text-primary bg-black fs-4">
-            <li className="mt-3 list-unstyled">
+          <ul className="col float-end p-2 bullets text-primary bg-black fs-4 border border-warning rounded-3 ">
+            <li className="mt-3 justify-content-start list-unstyled">
               Description: {dataPlanet.description}
             </li>
             <li className="mt-5 list-unstyled">

@@ -1,10 +1,10 @@
 import React, { useState, useEffect, useContext } from "react";
-import PropTypes from "prop-types";
-import { Link, useParams } from "react-router-dom";
+
+import { useParams } from "react-router-dom";
 import { Context } from "../store/appContext";
 
 export const TrPeople = ({ title, text, children }) => {
-  const { store, actions } = useContext(Context);
+  const { store } = useContext(Context);
   const params = useParams();
   const [dataPeople, setDataPeople] = useState({});
   console.log(store.people);
@@ -29,7 +29,7 @@ export const TrPeople = ({ title, text, children }) => {
         <div className="container carousel-item">
           <h1 className="ms-2 text-warning">{dataPeople.name}</h1>
 
-          <ul className="col float-end bullets text-primary bg-black  fs-4  ">
+          <ul className="col float-end p-2 bullets text-primary bg-black  fs-4 border border-warning rounded-3 ">
             <li className="mt-3 list-unstyled">
               Description: {dataPeople.description}
             </li>

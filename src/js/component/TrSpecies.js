@@ -31,7 +31,7 @@ export const TrSpecies = ({ title, text, children }) => {
         <div className="container carousel-item">
           <h1 className="ms-2 text-warning">{dataSpecies.name}</h1>
 
-          <ul className="col float-end bullets text-primary bg-black fs-4">
+          <ul className="col float-end bullets text-primary bg-black fs-4 border border-warning rounded-3 p-2">
             <li className="mt-3 list-unstyled">
               Description: {dataSpecies.description}
             </li>

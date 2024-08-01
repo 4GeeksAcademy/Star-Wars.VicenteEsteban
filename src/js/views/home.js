@@ -55,6 +55,7 @@ export const Home = () => {
           </div>
         ))}
       </div>
+
       <h1 className="text-warning">Characters</h1>
       <div className="row flex-nowrap overflow-auto">
         {store.people.map((person, i) => (
